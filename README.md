@@ -1,5 +1,5 @@
 # RoadMap.SH Projects
 
-## Frontend Developer
+## Frontend Projects
 
 - [x] [Single-Page CV](https://roadmap.sh/projects/single-page-cv)
