@@ -1,0 +1,214 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #007bff;
+  --text-color: #333;
+  --bg-color: #f8f9fa;
+  --heading-font: "Segoe UI", system-ui, sans-serif;
+  --body-font: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav .links a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+nav .links a:hover {
+  color: #007bff;
+}
+
+header {
+  height: 35.8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 70px;
+}
+
+header h1,
+header p {
+  text-align: center;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+main .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+main .container section#projects {
+  flex: 0 0 26%;
+}
+
+main .container section#experience {
+  flex: 0 0 39%;
+}
+
+main .container section#education {
+  flex: 0 0 35%;
+}
+
+main .container section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main .container section h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+button {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Article styles */
+#articles ul {
+  list-style: none;
+  padding: 0;
+}
+
+#articles a {
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+}
+
+#articles a:hover {
+  background-color: #f5f5f5;
+  color: var(--primary-color);
+}
+
+/* Project styles */
+#projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+#projects li {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* Contact form additional styles */
+#contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+#contact textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  nav {
+    padding: 1rem;
+  }
+
+  nav .links {
+    display: none;
+  }
+}
