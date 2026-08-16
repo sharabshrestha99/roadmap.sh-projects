@@ -3,39 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changelog Component</title>
+    <title>Changelog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="changelog">
-        <h2 class="changelog__title">Changelog</h2>
-        
-        <div class="changelog__item">
-            <div class="changelog__date">Sept 22, 2025</div>
-            <div class="changelog__content">
-                <span class="changelog__badge">New</span>
-                <h3>Added dark mode support</h3>
-                <p>Users can now switch between light and dark themes across the entire platform.</p>
-            </div>
-        </div>
+    <main class="changelog">
+        <header class="changelog__header">
+            <h1>Changelog</h1>
+            <p>Here's everything we have shipped in the past few days</p>
+        </header>
 
-        <div class="changelog__item">
-            <div class="changelog__date">Sept 15, 2025</div>
-            <div class="changelog__content">
-                <span class="changelog__badge changelog__badge--fix">Fix</span>
-                <h3>Performance improvements</h3>
-                <p>Fixed loading issues on the dashboard and improved overall response time.</p>
-            </div>
-        </div>
+        <section class="timeline" aria-label="Recent changelog entries">
+            <article class="timeline__item">
+                <time datetime="2024-09-03">September 3, 2024</time>
+                <div class="timeline__content">
+                    <span class="timeline__dot" aria-hidden="true"></span>
+                    <h2>Announcing Projects on Frontend Roadmap</h2>
+                </div>
+            </article>
 
-        <div class="changelog__item">
-            <div class="changelog__date">Sept 10, 2025</div>
-            <div class="changelog__content">
-                <span class="changelog__badge changelog__badge--update">Update</span>
-                <h3>UI refresh</h3>
-                <p>Updated the user interface with modern design elements and improved accessibility.</p>
-            </div>
-        </div>
-    </div>
+            <article class="timeline__item">
+                <time datetime="2024-08-28">August 28, 2024</time>
+                <div class="timeline__content">
+                    <span class="timeline__dot" aria-hidden="true"></span>
+                    <h2>Build your learning habits with learning streaks</h2>
+                </div>
+            </article>
+
+            <article class="timeline__item">
+                <time datetime="2024-08-25">August 25, 2024</time>
+                <div class="timeline__content">
+                    <span class="timeline__dot" aria-hidden="true"></span>
+                    <h2>Git and GitHub Roadmap</h2>
+                </div>
+            </article>
+
+            <article class="timeline__item">
+                <time datetime="2024-08-22">August 22, 2024</time>
+                <div class="timeline__content">
+                    <span class="timeline__dot" aria-hidden="true"></span>
+                    <h2>Submit your project solution and get feedback</h2>
+                </div>
+            </article>
+
+            <article class="timeline__item">
+                <time datetime="2024-08-15">August 15, 2024</time>
+                <div class="timeline__content">
+                    <span class="timeline__dot" aria-hidden="true"></span>
+                    <h2>Backend Project Ideas</h2>
+                </div>
+            </article>
+
+            <article class="timeline__item">
+                <time datetime="2024-08-10">August 10, 2024</time>
+                <div class="timeline__content">
+                    <span class="timeline__dot" aria-hidden="true"></span>
+                    <h2>Redis roadmap</h2>
+                </div>
+            </article>
+
+            <article class="timeline__item">
+                <time datetime="2024-08-01">August 1, 2024</time>
+                <div class="timeline__content">
+                    <span class="timeline__dot" aria-hidden="true"></span>
+                    <h2>Changelog page to help you stay in the loop</h2>
+                </div>
+            </article>
+        </section>
+
+        <button class="changelog__button" type="button">Visit Complete Changelog</button>
+    </main>
 </body>
 </html>
